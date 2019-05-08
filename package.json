@@ -1,0 +1,21 @@
+{
+  "name": "pdmcli",
+  "version": "1.0.0",
+  "description": "cli-tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+	"pdmcli": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\"\"\u001b[Dhttps://github.com/hopepdm/pdmcli\""
+  },
+  "keywords": [
+    "convenience"
+  ],
+  "author": "Hopepdm",
+  "license": "ISC"
+}
