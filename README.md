@@ -25,6 +25,8 @@ pdmcli -X
 
 copy template dir
 
-git add
+git add .
+
 git commit -m ''
+
 git push
