@@ -17,8 +17,14 @@ pdmcli -X
 
 ```sh
 -r  rollup打包
+
+-g  gulp打包
 ```
 
 #### operating principle
 
 copy template dir
+
+git add
+git commit -m ''
+git push

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- <link rel="icon" type="image/x-icon" href="/img/ruler_icon.png"> -->
+    <link rel="stylesheet" href="style.min.css" />
+</head>
+
+<body>
+
+    <!-- plugin wrap -->
+    <div id="loading" class="show">
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div id="main">
+        <img src="./res/image/play.png" id="play-btn">
+        <div class="dialog seller-info">
+            <div class="header">
+                <span class="title"></span>
+                <i class="close-btn">×</i>
+            </div>
+            <div class="body">
+                <img id="seller-logo" src="">
+                <div id="seller-name"></div>
+                <table>
+                    <tr>
+                        <th>电话：</th>
+                        <td id="seller-phone"></td>
+                    </tr>
+                    <tr>
+                        <th>地址：</th>
+                        <td id="seller-address"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="footer">技术支持:xxx</div>
+        </div>
+
+        <div id="nav">
+            <!-- 操作面板 -->
+            <div id="left-btn"></div>
+            <div id="right-btn"></div>
+            <div id="gallery">
+                <div>
+                    <ul></ul>
+                </div>
+            </div>
+            <div id="operate-panel-PC">
+                <div style="float:left;">
+                    <div id="fullBtn" class="opeBtn fullBtn"></div>
+                    <div class="opeBtn infoBtn"></div>
+
+                </div>
+                <div style="float:right;">
+                    <div class="opeBtn hideBtn"></div>
+                </div>
+            </div>
+            <div id="operate-panel-mobile">
+                <div class="opeBtn" id="walk-mode"></div>
+                <div class="opeBtn" id="vr-open"></div>
+                <div class="opeBtn infoBtn"></div>
+                <div class="opeBtn hideBtn"></div>
+            </div>
+        </div>
+        <div id="miniNav">
+            <div id="showNav"></div>
+        </div>
+        <div class="opeBtn" id="vr-close">退出VR</div>
+        <!--<div class="opeBtn" id="vrSetting">VR设置</div>-->
+        <div id="rotateMobile"></div>
+        <div id="cross" class="cross">+</div>
+        <div id="double-cross">
+            <div class="cross">+</div>
+            <div class="cross">+</div>
+        </div>
+
+        <span id="hot-title"></span>
+        <div id="mini-map">
+            <i></i>
+        </div>
+    </div>
+
+    <!-- 警告对话框 -->
+    <div class="dialog alert">
+        <div class="header">
+            <span class="title">商家信息</span>
+            <i class="close-btn">×</i>
+        </div>
+        <div class="body"></div>
+    </div>
+
+    <!-- tool-lib -->
+    <!-- build:js swkj-tool-lib.min.js -->
+    <script type="text/javascript" src="./lib/Detector.js"></script>
+    <script type="text/javascript" src="./lib/axios.min.js"></script>
+    <script type="text/javascript" src="./lib/jquery_2_2_4.min.js"></script>
+    <script type="text/javascript" src="./lib/jquery.easing_1_3.min.js"></script>
+    <script type="text/javascript" src="./lib/three.js"></script>
+    <script type="text/javascript" src="./lib/DeviceOrientationControls.js"></script>
+    <script type="text/javascript" src="./lib/control.js"></script>
+    <script type="text/javascript" src="./lib/OrbitControls.js"></script>
+    <script type="text/javascript" src="./lib/MTLLoader.js"></script>
+    <script type="text/javascript" src="./lib/OBJLoader.js"></script>
+    <script type="text/javascript" src="./lib/SWBinaryDecryptModel.js"></script>
+    <script type="text/javascript" src="./lib/EquirectangularToCubeGenerator.js"></script>
+    <script type="text/javascript" src="./lib/Tween.js"></script>
+    <script type="text/javascript" src="./lib/bezierEasing.js"></script>
+    <script type="text/javascript" src="./lib/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="./swkj/utils.js"></script>
+    
+    <!-- endbuild -->
+
+    <!-- ui-lib -->
+    <!-- build:js swkj-tool-ui-lib.min.js -->
+    <!-- endbuild -->
+
+    <!-- @if NODE_ENV='production' -->
+    <!-- build:js swkj-tool.min.js -->
+    <!-- @endif -->
+    <script type="text/javascript" src="./swkj/hashTable.js"></script>
+    <script type="text/javascript" src="./swkj/getJson.js"></script>
+    <script type="text/javascript" src="./swkj/processData.js"></script>
+    <script type="text/javascript" src="./swkj/shader.js"></script>
+    <script type="text/javascript" src="./swkj/panorama.js"></script>
+    <script type="text/javascript" src="./swkj/view.js"></script>
+    <!-- @if NODE_ENV='production' -->
+    <!-- endbuild -->
+    <!-- @endif -->
+
+    <!-- @if NODE_ENV='production' -->
+    <!-- build:js swkj-tool-ui.min.js -->
+    <!-- @endif -->
+    <!-- <script src=""></script> -->
+    <!-- @if NODE_ENV='production' -->
+    <!-- endbuild -->
+    <!-- @endif-->
+
+</body>
+
+</html>

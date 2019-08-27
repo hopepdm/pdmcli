@@ -14,6 +14,10 @@ process.argv.slice(2).forEach( ( item ) => {
         case "-r":
             config.cmd = 'rollup';
             break;
+		case "-gulp":
+		case "-g":
+			config.cmd = "gulp";
+			break;
         default:
             console.log(item)
             break;
